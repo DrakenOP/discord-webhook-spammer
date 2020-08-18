@@ -10,7 +10,7 @@ pip install discord_webhooks
 pip install crayons # not necessary
 ```
 
-![](https://github.com/noor0x07/discord-webhook-spammer/showcase.gif)
+![](showcase.gif)
 
 ## Usage
 
