@@ -10,6 +10,8 @@ pip install discord_webhooks
 pip install crayons # not necessary
 ```
 
+![](https://media1.tenor.com/images/87ac754fec2a9be43ea2a760144fa771/tenor.gif)
+
 ## Usage
 
 ```python
