@@ -10,7 +10,7 @@ import crayons
 from discord_webhook import *
 
 print("{}".format(crayons.red('Any malicious use with this program will not be used against me.')))
-print("{}".format(crayons.red('This is for educational purposes ONLY.'\n)))
+print("{}".format(crayons.red('This is for educational purposes ONLY.\n')))
 
 def send():
     webhook = DiscordWebhook(url=webhookurl, content="discord.gift/" + code) # Webhook url and message content
@@ -35,3 +35,4 @@ for x in range(1, int(amount) + 1):
     time.sleep(1.65) # waits 1.65 seconds due to ratelimits.
 
 print('\nAll codes have been sent!')
+time.sleep(5)
