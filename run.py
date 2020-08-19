@@ -9,17 +9,23 @@ import time
 import crayons
 from discord_webhook import *
 
-amount = 0
-
 print("{}".format(crayons.red('Any malicious use with this program will not be used against me.')))
-print("{}".format(crayons.red('This is for educational purposes ONLY.')))
-
-amount = input("How many codes would you like to be sent? ")
-print("You have chose to send "+ amount +" codes.")
+print("{}".format(crayons.red('This is for educational purposes ONLY.'\n)))
 
 def send():
-    webhook = DiscordWebhook(url='https://discordapp.com/api/webhooks/745418383025111090/MvH8vMYZ6gweiVZoJmTyDpKJ-9BCR5kkEs4e7S291Ky3N0OyqULGJg8mhesIFZqU2FNT', content="discord.gift/" + code) # Webhook message and message content
+    webhook = DiscordWebhook(url=webhookurl, content="discord.gift/" + code) # Webhook url and message content
     response = webhook.execute()
+
+# SETTINGS
+webhookurl = 'Your webhook here!'
+
+changewh = input("Do you want to change the web hook url, say Y if you haven't changed it in the file else say N. (Y/N) > ")
+if changewh == "y":
+    webhookurl = input("You have chosen to change the web hook url, paste it here and press enter. > ")
+
+amount = 0
+amount = input("How many codes would you like to be sent? ")
+print("You have chose to send "+ amount +" codes.")
 
 
 for x in range(1, int(amount) + 1):
